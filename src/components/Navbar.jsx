@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full py-3 font-prime">
+    <nav className="w-full py-3 font-libre ">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Left: Logo */}
         <div className="flex items-center gap-2">
@@ -15,9 +15,9 @@ export default function Navbar() {
 
         {/* Center: Nav links (Desktop) / Agency Name (Mobile) */}
         <div className="hidden md:flex gap-6 tracking-wide text-sm">
-          <a href="#about">About</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#blog">Blog</a>
+          <a href="#about" className="hover:opacity-50">About</a>
+          <a href="#blog" className="hover:opacity-50">Blog</a>
+          <a href="#gallery" className="hover:opacity-50">Gallery</a>
         </div>
         <div className="md:hidden text-sm ">Veena's Gallery</div>
 
@@ -67,16 +67,17 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden mt-2 space-y-2 text-center text-sm absolute left-1/2 transform -translate-x-1/2 bg-white w-full">
-          <a href="#about" className="block">
+        <div className="md:hidden mt-2 pb-2 space-y-2 text-center text-sm absolute left-1/2 transform -translate-x-1/2 bg-white w-full">
+          <a href="#about" className="block hover:opacity-50">
             About
           </a>
-          <a href="#gallery" className="block">
-            Gallery
-          </a>
-          <a href="#blog" className="block">
+          <a href="#blog" className="block hover:opacity-50">
             Blog
           </a>
+          <a href="#gallery" className="block hover:opacity-50">
+            Gallery
+          </a>
+          
         </div>
       )}
     </nav>
