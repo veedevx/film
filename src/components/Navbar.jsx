@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Left: Logo */}
         <div className="flex items-center gap-2">
-          <Logo />
+          <Logo h="25" w="25"/>
         </div>
 
         {/* Center: Nav links (Desktop) / Agency Name (Mobile) */}

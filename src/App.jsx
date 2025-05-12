@@ -5,6 +5,8 @@ import Image from "./components/Image";
 import Button from "./components/Button";
 import BlogCard from "./components/BlogCard";
 import EventCard from "./components/EventCard";
+import ContactForm from "./components/ContactForm";
+import Logo from "./components/Logo";
 
 function App() {
   return (
@@ -119,9 +121,28 @@ function App() {
         <div className="h-100 ">
           <Image src="FilmFrame/img20.jpg" alt="Cinematic Image" />
         </div>
-        <div className="bg-gray-200"></div>
+        <div className="bg-gray-200 pt-10">
+          <ContactForm />
+        </div>
       </div>
       <footer className="my-30 md:my-30">
+        <div>
+          <div className="font-libre flex text-5xl ">
+            Veena's Gallery
+            <Logo h="40" w="40"/>
+          </div>
+          <div></div>
+          <div>Privac Policy</div>
+          <div>Accessibility Statement</div>
+        </div>
+        <div>
+          <div>Stay Connected</div>
+          <div>
+            <div>751024</div>
+            <div>Bhubaneswar, India</div>
+            <div>&#169; 2025 by Veena's Gallery</div>
+          </div>
+        </div>
       </footer>
     </div>
   );
